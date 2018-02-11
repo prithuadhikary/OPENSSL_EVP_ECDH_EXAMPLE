@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1518366546 source:/home/prithu/workspace/ecdh_save_read/main.c
+	<stdio.h>
+	<stdlib.h>
+	<openssl/ecdh.h>
+	<openssl/ec.h>
+	<openssl/pem.h>
+
