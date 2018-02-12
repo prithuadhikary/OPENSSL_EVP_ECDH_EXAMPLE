@@ -1,4 +1,4 @@
-# OPENSSL EVP ECDH EXAMPLE(C)
+# OPENSSL EVP ECDH EXAMPLE
 
 Demonstration of Simple ECDH Using OpenSSL's EVP Library.
 
