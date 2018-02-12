@@ -1,5 +1,10 @@
 # OPENSSL EVP ECDH EXAMPLE(C)
 
-This contains code demonstrating simple ECDH key agreement mechanism using the OpenSSL's EVP library.
+Demonstration of Simple ECDH Using OpenSSL's EVP Library.
 
-Requires LibCrypto Library.
+# Code Build
+1. Install build-essential and libssl
+  sudo apt-get install build-essential libssl-dev
+
+2. Use GCC to build code. The code needs to be linked to libcrypto
+   gcc -w  main.c -o ecdh-sample -lcrypto
