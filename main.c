@@ -158,7 +158,7 @@ derivedKey* deriveShared(EVP_PKEY *publicKey, EVP_PKEY *privateKey){
 
     derivedKey *dk = (derivedKey *)malloc(sizeof(derivedKey));
 
-    EVP_PKEY_CTX *paramCtx = NULL, *derivationCtx = NULL;
+    EVP_PKEY_CTX *derivationCtx = NULL;
 
     derivationCtx = EVP_PKEY_CTX_new(privateKey, NULL);
 
@@ -172,7 +172,7 @@ derivedKey* deriveShared(EVP_PKEY *publicKey, EVP_PKEY *privateKey){
 
 	if(1 != (EVP_PKEY_derive(derivationCtx, dk->secret, &dk->length))) handleDerivationErrors(2);
 
-    EVP_PKEY_CTX_free(paramCtx);
+        EVP_PKEY_CTX_free(derivationCtx);
 
 	return dk;
 }
